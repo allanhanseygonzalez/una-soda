@@ -52,6 +52,11 @@ function SalesModule() {
                     placeholder="Ejemplo: 20"
                   />
                 </div>
+                <div className="pt-4 flex items-center space-x-4">
+                <button className="bg-sky-900 hover:bg-sky-800 flex justify-center items-center w-1/2 m-auto text-white px-4 py-3 rounded-md focus:outline-none">
+                  Añadir
+                </button>
+              </div>
                 <div className="bg-gray-300 h-[165px] border-solid rounded-md overflow-auto">
                   <table className="border-collapse w-full overflow-auto">
                     <thead>
