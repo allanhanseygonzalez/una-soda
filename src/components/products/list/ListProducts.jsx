@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { IoPencil } from "react-icons/io5";
-import { products } from "../../../data/products";
+import {products} from "../../../data/products";
 
 function ListProducts(user) {
-
-  const productsJson = products;
-  console.log("ACA", user.user)
+ 
+    const productsJson = products;
 
   return (
     <div className="flex flex-col mb-12 w-full">
@@ -67,14 +66,14 @@ function ListProducts(user) {
                     Tipo
                   </th>
                   {user.user == 'empleado' &&
-                    <th
-                      scope="col"
-                      className="px-16 py-1 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                    >
-                      Acciones
-                    </th>
+                   <th
+                   scope="col"
+                   className="px-16 py-1 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                 >
+                   Acciones
+                 </th>
                   }
-
+                 
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
@@ -87,7 +86,7 @@ function ListProducts(user) {
                       <div className="flex items-center">
                         <div className="ml-4">
                           <div className="text-sm font-medium text-gray-900">
-                            <span> {product.nombre}</span>
+                            <span> {product.nombre}</span> 
                           </div>
                         </div>
                       </div>
@@ -108,18 +107,18 @@ function ListProducts(user) {
                       </div>
                     </td>
                     {user.user == 'empleado' &&
-                      <td className="px-1 py-4 text-left text-sm font-medium">
-                        <a href="/employee/product/edit">
-                          <button className="inline-block mr-2 text-sm px-4 py-2 leading-none border rounded text-blue-800 border-blue-600 hover:bg-blue-300 hover:text-blue-500 mt-4 lg:mt-0">
-                            EDITAR
-                          </button>
-                        </a>
-                        <button className="inline-block text-sm px-4 py-2 leading-none border rounded text-red-800 border-red-600 hover:bg-red-300 hover:text-red-500 mt-4 lg:mt-0">
-                          ELIMINAR
-                        </button>
-                      </td>
+                    <td className="px-1 py-4 text-left text-sm font-medium">
+                      <a href="/employee/product/edit">
+                      <button className="inline-block mr-2 text-sm px-4 py-2 leading-none border rounded text-blue-800 border-blue-600 hover:bg-blue-300 hover:text-blue-500 mt-4 lg:mt-0">
+                        EDITAR
+                      </button>
+                      </a>
+                      <button className="inline-block text-sm px-4 py-2 leading-none border rounded text-red-800 border-red-600 hover:bg-red-300 hover:text-red-500 mt-4 lg:mt-0">
+                        ELIMINAR
+                      </button>
+                    </td>
                     }
-
+                    
                   </tr>
                 ))}
               </tbody>

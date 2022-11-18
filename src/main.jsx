@@ -17,6 +17,7 @@ import MenuList from "./components/menu/MenuList";
 import Schedules from "./components/schedules/Schedules";
 import ScheduleList from "./components/schedules/SchedulesList";
 import SalesModule from "./components/sales/SalesModule";
+import SalesList from "./components/sales/SalesList";
 
 const router = createBrowserRouter([
   {
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
           {
             path: "/employee/sales/sell",
             element: <SalesModule />,
+          },
+          {
+            path: "/employee/sales/list",
+            element: <SalesList />,
           },
         ],
       },
