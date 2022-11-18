@@ -15,6 +15,7 @@ import EditProduct from './components/products/edit/EditProduct';
 import ListProducts from "./components/products/list/ListProducts";
 import MenuList from './components/menu/MenuList';
 import Schedules from "./components/schedules/Schedules";
+import ScheduleList from "./components/schedules/SchedulesList";
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
           {
             path: "/employee/menu/list",
             element: <MenuList />,
+          },
+          {
+            path: "/employee/schedule/list",
+            element: <ScheduleList />,
           },
         ],
       },

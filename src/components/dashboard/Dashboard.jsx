@@ -29,7 +29,7 @@ function Dashboard() {
         <div className="flex flex-col bg-white rounded-lg shadow-md w-full m-6 overflow-hidden sm:w-52">
           <img className="object-cover h-full" src={Clock} alt="" />
           <h2 className="mt-4 text-center px-2 pb-5">Horarios</h2>
-          <a href="#" className="bg-sky-900 text-white p-3 text-center hover:bg-sky-800 transition-all duration-500" >
+          <a href="/employee/schedule/list" className="bg-sky-900 text-white p-3 text-center hover:bg-sky-800 transition-all duration-500" >
             Gestionar
           </a>
         </div>

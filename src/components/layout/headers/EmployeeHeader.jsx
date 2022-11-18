@@ -66,7 +66,7 @@ function Header() {
                 <Link to="/employee/menu/list">Menú</Link>
               </li>
               <li className="text-white transition-all hover:text-lg duration-300">
-                <Link to="">Horarios</Link>
+                <Link to="/employee/schedule/list">Horarios</Link>
               </li>
               <li className="text-white transition-all hover:text-lg duration-300">
               <Link to="">Ventas</Link>
