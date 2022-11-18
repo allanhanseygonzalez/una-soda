@@ -13,6 +13,7 @@ import EmployeeLayout from "./components/layout/layouts/EmployeeLayout";
 import CreateProduct from "./components/products/create/CreateProduct";
 import EditProduct from './components/products/edit/EditProduct';
 import ListProducts from "./components/products/list/ListProducts";
+import MenuList from './components/menu/MenuList';
 import Schedules from "./components/schedules/Schedules";
 
 const router = createBrowserRouter([
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
           {
             path: "/employee/product/list",
             element: <ListProducts />,
+          },
+          {
+            path: "/employee/menu/list",
+            element: <MenuList />,
           },
         ],
       },

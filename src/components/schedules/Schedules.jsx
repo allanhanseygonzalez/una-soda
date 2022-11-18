@@ -12,7 +12,7 @@ function Schedules() {
           <div className="lg:flex lg:items-center lg:justify-between px-20 py-2 ">
             <div className="flex-1 min-w-0">
               <h2 className="text-2xl mb-6 leading-7 text-gray-900 sm:text-3xl sm:truncate">
-                Lista de horarios de la soda
+                Horario Semanal
               </h2>
             </div>
            </div>

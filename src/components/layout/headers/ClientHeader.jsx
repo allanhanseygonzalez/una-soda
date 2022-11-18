@@ -11,7 +11,7 @@ function Header() {
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <Link to="">
+            <Link to="/client/home">
               <img src={LogoBlancoUNA} className="object-scale-down h-16"></img>
             </Link>
             <div className="md:hidden">
@@ -66,7 +66,7 @@ function Header() {
                 <Link to="/client/menu">Menú</Link>
               </li>
               <li className="text-white transition-all hover:text-lg duration-300">
-                <Link to="">Horarios</Link>
+                <Link to="/client/schedules">Horarios</Link>
               </li>
             </ul>
           </div>

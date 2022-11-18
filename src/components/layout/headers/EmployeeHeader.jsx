@@ -11,7 +11,7 @@ function Header() {
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <Link to="">
+            <Link to="/employee/dashboard">
               <img src={LogoBlancoUNA} className="object-scale-down h-16"></img>
             </Link>
             <div className="md:hidden">
@@ -60,10 +60,10 @@ function Header() {
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <li className="text-white  transition-all hover:text-lg duration-300 ">
-                <Link to="">Productos</Link>
+                <Link to="/employee/product/list">Productos</Link>
               </li>
               <li className="text-white transition-all hover:text-lg duration-300">
-                <Link to="about">Menú</Link>
+                <Link to="/employee/menu/list">Menú</Link>
               </li>
               <li className="text-white transition-all hover:text-lg duration-300">
                 <Link to="">Horarios</Link>
