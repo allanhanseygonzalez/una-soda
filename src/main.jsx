@@ -7,6 +7,8 @@ import Error from "./components/error/Error";
 import Login from "./components/auth/Login";
 import Dashboard from "./components/dashboard/Dashboard";
 import EmployeeLayout from "./components/layout/layouts/EmployeeLayout";
+import ClientLayout from "./components/layout/layouts/ClientLayout";
+import ClientHome from "./components/client/ClientHome";
 
 const router = createBrowserRouter([
   {
@@ -16,7 +18,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/employee",
-        element: <EmployeeLayout/>,
+        element: <EmployeeLayout />,
         children: [
           {
             path: "/employee/dashboard",
@@ -25,11 +27,20 @@ const router = createBrowserRouter([
         ],
       },
       {
+        path: "/client",
+        element: <ClientLayout />,
+        children: [
+          {
+            path: "/client/home",
+            element: <ClientHome />,
+          },
+        ],
+      },
+      {
         path: "/login",
         element: <Login />,
       },
-      {}
-      
+      {},
     ],
   },
 ]);

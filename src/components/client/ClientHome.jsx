@@ -3,7 +3,7 @@ import Banner from "../banner/Banner";
 import ClientDashboard from '../dashboard/client-dashboard/ClientDashboard';
 
 
-function ClientPage() {
+function ClientHome() {
   return (
     <>
     <Banner/>
@@ -12,4 +12,4 @@ function ClientPage() {
   );
 }
 
-export default ClientPage;
+export default ClientHome;
