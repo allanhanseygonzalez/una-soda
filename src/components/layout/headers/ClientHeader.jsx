@@ -63,7 +63,7 @@ function Header() {
                 <Link to="">Productos</Link>
               </li>
               <li className="text-white transition-all hover:text-lg duration-300">
-                <Link to="about">Menú</Link>
+                <Link to="/client/menu">Menú</Link>
               </li>
               <li className="text-white transition-all hover:text-lg duration-300">
                 <Link to="">Horarios</Link>

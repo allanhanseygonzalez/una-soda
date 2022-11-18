@@ -6,9 +6,10 @@ import "./index.css";
 import Error from "./components/error/Error";
 import Login from "./components/auth/Login";
 import Dashboard from "./components/dashboard/Dashboard";
-import EmployeeLayout from "./components/layout/layouts/EmployeeLayout";
 import ClientLayout from "./components/layout/layouts/ClientLayout";
 import ClientHome from "./components/client/ClientHome";
+import ClientMenuList from "./components/client/ClientMenuList";
+import EmployeeLayout from "./components/layout/layouts/EmployeeLayout";
 import CreateProduct from "./components/products/create/CreateProduct";
 import ListProducts from "./components/products/list/ListProducts";
 
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
           {
             path: "/client/home",
             element: <ClientHome />,
+          },
+          {
+            path: "/client/menu",
+            element: <ClientMenuList />,
           },
         ],
       },
