@@ -4,12 +4,13 @@ import Root from "./routes/root";
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import "./index.css";
 import Error from "./components/error/Error";
-import Home from "./components/home/Home";
 import Login from "./components/auth/Login";
 import Dashboard from "./components/dashboard/Dashboard";
+import EmployeeLayout from "./components/layout/layouts/EmployeeLayout";
+import ClientLayout from "./components/layout/layouts/ClientLayout";
+import ClientHome from "./components/client/ClientHome";
 import CreateProduct from "./components/products/create/CreateProduct";
 import ListProducts from "./components/products/list/ListProducts";
-import ClientPage from "./components/client/ClientPage";
 
 const router = createBrowserRouter([
   {
@@ -18,24 +19,30 @@ const router = createBrowserRouter([
     errorElement: <Error />,
     children: [
       {
-        path: "/",
-        element: <Home />,
+        path: "/employee",
+        element: <EmployeeLayout />,
         children: [
           {
-            path: "/dashboard",
+            path: "/employee/dashboard",
             element: <Dashboard />,
           },
           {
-            path: "/product/create",
-            element: <CreateProduct/>
+            path: "/employee/product/create",
+            element: <CreateProduct />,
           },
           {
-            path: "/product/list",
-            element: <ListProducts/>
+            path: "/employee/product/list",
+            element: <ListProducts />,
           },
+        ],
+      },
+      {
+        path: "/client",
+        element: <ClientLayout />,
+        children: [
           {
-            path: "/client",
-            element: <ClientPage/>
+            path: "/client/home",
+            element: <ClientHome />,
           },
         ],
       },
@@ -43,6 +50,7 @@ const router = createBrowserRouter([
         path: "/login",
         element: <Login />,
       },
+      {},
     ],
   },
 ]);
