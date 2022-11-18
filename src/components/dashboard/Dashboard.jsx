@@ -4,6 +4,7 @@ import MenuRest from "../../assets/menu-rest.jpeg";
 import Clock from "../../assets/clock.jpeg";
 import Sales from "../../assets/sales.png";
 import { Link } from "react-router-dom";
+import CashMachine from "../../assets/cashmachine.png";
 
 function Dashboard() {
   return (
@@ -40,6 +41,13 @@ function Dashboard() {
             Gestionar
           </a>
         </div>
+        <div className="flex flex-col bg-white rounded-lg shadow-md w-full m-6 overflow-hidden sm:w-52">
+        <img className="object-cover h-full" src={CashMachine} alt="" />
+        <h2 className="mt-4 text-center px-2 pb-5">Vender</h2>
+        <a href="/employee/sales/sell" className="bg-sky-900 text-white p-3 text-center hover:bg-sky-800 transition-all duration-500" >
+          Realizar
+        </a>
+      </div>
       </div>
     </div>
   );

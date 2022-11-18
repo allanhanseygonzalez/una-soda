@@ -71,6 +71,9 @@ function Header() {
               <li className="text-white transition-all hover:text-lg duration-300">
               <Link to="">Ventas</Link>
             </li>
+            <li className="text-white transition-all hover:text-lg duration-300">
+            <Link to="/employee/sales/sell">Vender</Link>
+          </li>
             </ul>
           </div>
         </div>
