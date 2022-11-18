@@ -14,7 +14,7 @@ function ScheduleList() {
           <div className="lg:flex lg:items-center lg:justify-between px-20 py-2">
             <div className="flex-1 min-w-0">
               <h2 className="text-2xl mb-6 leading-7 text-gray-900 sm:text-3xl sm:truncate">
-                Inventario de Productos
+                Gestión de Horarios
               </h2>
             </div>
             <div className="mt-5 flex lg:mt-0 lg:ml-4">
