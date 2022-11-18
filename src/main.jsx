@@ -9,6 +9,8 @@ import Dashboard from "./components/dashboard/Dashboard";
 import EmployeeLayout from "./components/layout/layouts/EmployeeLayout";
 import ClientLayout from "./components/layout/layouts/ClientLayout";
 import ClientHome from "./components/client/ClientHome";
+import CreateProduct from "./components/products/create/CreateProduct";
+import ListProducts from "./components/products/list/ListProducts";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +25,14 @@ const router = createBrowserRouter([
           {
             path: "/employee/dashboard",
             element: <Dashboard />,
+          },
+          {
+            path: "/employee/product/create",
+            element: <CreateProduct />,
+          },
+          {
+            path: "/employee/product/list",
+            element: <ListProducts />,
           },
         ],
       },
