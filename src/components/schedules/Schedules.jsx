@@ -6,18 +6,18 @@ function Schedules() {
     const schedulesJson = schedules;
 
   return (
-    <div className="flex mb-10 w-auto  px-72 ">
+    <div className="flex items-center justify-center h-full mb-12">
       <div className="-my-1 overflow-x-auto overflow-y-auto ">
         <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-12 ">
           <div className="lg:flex lg:items-center lg:justify-between px-20 py-2 ">
             <div className="flex-1 min-w-0">
               <h2 className="text-2xl mb-6 leading-7 text-gray-900 sm:text-3xl sm:truncate">
-                Horario Semanal
+                Lista de horarios de la soda
               </h2>
             </div>
            </div>
-          <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
-            <table className=" min-w-full divide-y divide-gray-200">
+          <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg" >
+            <table className=" min-w-full divide-y divide-gray-200 ">
               <thead className="bg-gray-50">
                 <tr>
                   <th
