@@ -19,7 +19,7 @@ function ScheduleList() {
             </div>
             <div className="mt-5 flex lg:mt-0 lg:ml-4">
               <span className="hidden sm:block">
-                <Link to="/employee/product/create">
+                <Link to="#">
                   <button
                     type="button"
                     className="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
@@ -48,13 +48,6 @@ function ScheduleList() {
                     Horario
                   </th>
 
-                  <th
-                    scope="col"
-                    className="px-16 py-1 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                  >
-                    Acciones
-                  </th>
-
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
@@ -71,17 +64,6 @@ function ScheduleList() {
                           </div>
                         </div>
                       </div>
-                    </td>
-
-                    <td className="px-1 py-4 text-left text-sm font-medium">
-                      <a href="#">
-                        <button className="inline-block mr-2 text-sm px-4 py-2 leading-none border rounded text-blue-800 border-blue-600 hover:bg-blue-300 hover:text-blue-500 mt-4 lg:mt-0">
-                          EDITAR
-                        </button>
-                      </a>
-                      <button className="inline-block text-sm px-4 py-2 leading-none border rounded text-red-800 border-red-600 hover:bg-red-300 hover:text-red-500 mt-4 lg:mt-0">
-                        ELIMINAR
-                      </button>
                     </td>
 
                   </tr>
