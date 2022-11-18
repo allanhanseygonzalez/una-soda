@@ -52,7 +52,7 @@ function SalesModule() {
                     placeholder="Ejemplo: 20"
                   />
                 </div>
-                <div className="bg-gray-300 h-[350px] border-solid rounded-md overflow-auto">
+                <div className="bg-gray-300 h-[165px] border-solid rounded-md overflow-auto">
                   <table className="border-collapse w-full overflow-auto">
                     <thead>
                       <tr>
