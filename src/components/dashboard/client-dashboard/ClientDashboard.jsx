@@ -22,7 +22,7 @@ function ClientDashboard() {
           <img className="object-cover h-full" src={MenuRest} alt="" />
           <h2 className="mt-4 text-center px-2 pb-5">Menú de la semana</h2>
           <a
-            href="#"
+            href="/client/menu"
             className="bg-sky-900 text-white p-3 text-center hover:bg-sky-800 transition-all duration-500"
           >
             Ver
@@ -32,7 +32,7 @@ function ClientDashboard() {
           <img className="object-cover h-full" src={Clock} alt="" />
           <h2 className="mt-4 text-center px-2 pb-5">Horario semanal</h2>
           <a
-            href="#"
+            href="/client/schedules"
             className="bg-sky-900 text-white p-3 text-center hover:bg-sky-800 transition-all duration-500"
           >
             Ver
