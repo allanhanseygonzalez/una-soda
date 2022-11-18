@@ -11,11 +11,12 @@ import ClientHome from "./components/client/ClientHome";
 import ClientMenuList from "./components/client/ClientMenuList";
 import EmployeeLayout from "./components/layout/layouts/EmployeeLayout";
 import CreateProduct from "./components/products/create/CreateProduct";
-import EditProduct from './components/products/edit/EditProduct';
+import EditProduct from "./components/products/edit/EditProduct";
 import ListProducts from "./components/products/list/ListProducts";
-import MenuList from './components/menu/MenuList';
+import MenuList from "./components/menu/MenuList";
 import Schedules from "./components/schedules/Schedules";
 import ScheduleList from "./components/schedules/SchedulesList";
+import SalesModule from "./components/sales/SalesModule";
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
             path: "/employee/schedule/list",
             element: <ScheduleList />,
           },
+          {
+            path: "/employee/sales/sell",
+            element: <SalesModule />,
+          },
         ],
       },
       {
@@ -64,10 +69,10 @@ const router = createBrowserRouter([
           {
             path: "/client/menu",
             element: <ClientMenuList />,
-          },  
+          },
           {
             path: "/client/schedules",
-            element: <Schedules/>
+            element: <Schedules />,
           },
         ],
       },
@@ -75,7 +80,6 @@ const router = createBrowserRouter([
         path: "/login",
         element: <Login />,
       },
-      {},
     ],
   },
 ]);
