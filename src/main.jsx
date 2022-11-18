@@ -41,7 +41,7 @@ const router = createBrowserRouter([
           },
           {
             path: "/employee/product/list",
-            element: <ListProducts />,
+            element: <ListProducts user={"empleado"} />,
           },
           {
             path: "/employee/menu/list",
@@ -64,10 +64,14 @@ const router = createBrowserRouter([
           {
             path: "/client/menu",
             element: <ClientMenuList />,
-          },  
+          },
           {
             path: "/client/schedules",
-            element: <Schedules/>
+            element: <Schedules />,
+          },
+          {
+            path: "/client/product/list",
+            element: <ListProducts user={"cliente"} />,
           },
         ],
       },
