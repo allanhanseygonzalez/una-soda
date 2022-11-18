@@ -17,6 +17,7 @@ function ListProducts(user) {
                 Inventario de Productos
               </h2>
             </div>
+            {user.user == 'empleado' &&
             <div className="mt-5 flex lg:mt-0 lg:ml-4">
               <span className="hidden sm:block">
                 <Link to="/employee/product/create">
@@ -30,6 +31,8 @@ function ListProducts(user) {
                 </Link>
               </span>
             </div>
+            }
+            
           </div>
           <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
             <table className="min-w-full divide-y divide-gray-200">

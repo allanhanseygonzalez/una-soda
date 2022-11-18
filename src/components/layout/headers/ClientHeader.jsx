@@ -60,7 +60,7 @@ function Header() {
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <li className="text-white  transition-all hover:text-lg duration-300 ">
-                <Link to="">Productos</Link>
+                <Link to="/client/product/list">Productos</Link>
               </li>
               <li className="text-white transition-all hover:text-lg duration-300">
                 <Link to="/client/menu">Menú</Link>

@@ -51,7 +51,7 @@ const router = createBrowserRouter([
           },
           {
             path: "/employee/schedule/list",
-            element: <ScheduleList />,
+            element: <ScheduleList/>,
           },
           {
             path: "/employee/sales/sell",
@@ -77,7 +77,7 @@ const router = createBrowserRouter([
           },
           {
             path: "/client/schedules",
-            element: <Schedules />,
+            element: <Schedules/>,
           },
           {
             path: "/client/product/list",
