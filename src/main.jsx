@@ -11,6 +11,7 @@ import ClientHome from "./components/client/ClientHome";
 import ClientMenuList from "./components/client/ClientMenuList";
 import EmployeeLayout from "./components/layout/layouts/EmployeeLayout";
 import CreateProduct from "./components/products/create/CreateProduct";
+import EditProduct from './components/products/edit/EditProduct';
 import ListProducts from "./components/products/list/ListProducts";
 import Schedules from "./components/schedules/Schedules";
 
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
           {
             path: "/employee/product/create",
             element: <CreateProduct />,
+          },
+          {
+            path: "/employee/product/edit",
+            element: <EditProduct />,
           },
           {
             path: "/employee/product/list",

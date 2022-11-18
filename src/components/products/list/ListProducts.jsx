@@ -104,9 +104,11 @@ function ListProducts() {
                       </div>
                     </td>
                     <td className="px-1 py-4 text-left text-sm font-medium">
+                      <a href="/employee/product/edit">
                       <button className="inline-block mr-2 text-sm px-4 py-2 leading-none border rounded text-blue-800 border-blue-600 hover:bg-blue-300 hover:text-blue-500 mt-4 lg:mt-0">
                         EDITAR
                       </button>
+                      </a>
                       <button className="inline-block text-sm px-4 py-2 leading-none border rounded text-red-800 border-red-600 hover:bg-red-300 hover:text-red-500 mt-4 lg:mt-0">
                         ELIMINAR
                       </button>
